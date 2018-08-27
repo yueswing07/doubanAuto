@@ -1,0 +1,4 @@
+  File "autoReplyMobile.py", line 50
+    "ck": cookie.get('ck'),
+        ^
+SyntaxError: invalid syntax

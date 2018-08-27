@@ -1,0 +1,41 @@
+## 豆瓣请求说明
+
+*  删除 
+https://www.douban.com/j/group/topic/120374543/remove_comment
+post 提交
+cid=1644472090&ck=LISO
+cid 回复的id 
+ck cookie的值
+
+* 自动发帖
+注意content 需要josn 格式字符串 blocks里面多个对象 应该是一样一个样式对象
+{
+  "blocks": [
+    {
+      "key": "30drh",
+      "text": "删了",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+  ],
+  "entityMap": {}
+}
+发帖成功 返回地址 {"url":"https:\/\/www.douban.com\/group\/topic\/122472967\/","r":0}
+
+编辑帖子： 
+相对发帖多了topic_id 参数
+删除帖子：
+https://www.douban.com/group/topic/122472967/remove?ck=hI_f
+
+
+
+置顶帖子
+https://www.douban.com/group/topic/111306566/
+
+
+
+api 没用过
+https://developers.douban.com/wiki/?title=api_v2
